@@ -1,0 +1,26 @@
+<div class="container">
+    <div class="row">
+        <ng-container *ngIf="isActive; else isDesactived">
+            <div class="col-md-12 text-center">
+                <div class="card">
+                    <h5 class="card-header">New feature</h5>
+                    <div class="card-body">
+                        <h5 class="card-title">Feature 2021</h5>
+                        <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur reprehenderit, repellendus porro aperiam quod corporis sed eos quam. Dolorem nisi pariatur corrupti dolore repudiandae laborum non sunt ratione culpa quam?</p>
+                    </div>
+                </div>
+            </div>
+        </ng-container>
+        <ng-template #isDesactived>
+            <div class="col-md-12 text-center">
+                <div class="card">
+                    <h5 class="card-header">Old feature</h5>
+                    <div class="card-body">
+                        <h5 class="card-title">Feature 2020</h5>
+                        <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur reprehenderit, repellendus porro aperiam quod corporis sed eos quam. Dolorem nisi pariatur corrupti dolore repudiandae laborum non sunt ratione culpa quam?</p>
+                    </div>
+                </div>
+            </div>
+        </ng-template>
+    </div>
+</div>
